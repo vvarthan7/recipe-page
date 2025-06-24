@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #F3E5D7;
+  font-size: 16px;
+  color: #5F564D;
+  line-height: 150%;
+  font-family: 'Outfit';
+  font-weight: 400;
+}
+
+ul, p, h1, h3, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 0 32px 40px;
+}
+
+h1 {
+  color: #312E2C;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  margin: 40px 0 24px;
+}
+
+img {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.preparation {
+  background-color: #FFF7FB;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 32px 0;
+}
+
+.preparation p {
+  color: #7A284E;
+  font-size: 20px;
+  font-family: 'Outfit';
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 100%;
+}
+
+.preparation ul {
+  padding: 0 24px;
+}
+
+.preparation li::marker {
+  color: #7A284E;
+}
+
+.preparation li, .ingredients li, .instructions li {
+  margin-bottom: 8px;
+}
+
+.preparation li:last-child, .ingredients li:last-child, .instructions li:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #854632;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  line-height: 100%;
+}
+
+.ingredients, hr, .instructions {
+  margin-bottom: 32px;
+}
+
+.ingredients ul, .instructions ol {
+  padding: 0 0 0 24px;
+}
+
+.ingredients li::marker, .instructions li::marker {
+  color: #854632;
+}
+
+.instructions li::marker {
+  font-weight: bold;
+}
+
+.instructions li {
+  padding-left: 16px;
+}
+
+table {
+  margin-top: 24px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: 1px solid #E3DDD7;
+}
+
+table tr:last-child {
+  border: none;
+}
+
+table tr td:first-child {
+  padding-left: 32px;
+}
+
+table tr td:last-child {
+  color: #854632;
+}
+
+td {
+  padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 128px 0;
+  }
+  .wrapper {
+    max-width: 616px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 24px;
+  }
+
+  img {
+    width: 100%;
+    margin: 0;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 736px;
+  }
+}
