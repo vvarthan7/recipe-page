@@ -1,28 +1,39 @@
+:root {
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --white: #ffffff;
+}
+
 body {
   margin: 0;
-  background-color: #F3E5D7;
-  font-size: 16px;
-  color: #5F564D;
+  background-color: var(--stone-100);
+  font-size: 1rem;
+  color: var(--stone-600);
   line-height: 150%;
-  font-family: 'Outfit';
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
 }
 
-ul, p, h1, h3, ol {
+ul, p, h1, h2, h3, ol {
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 0 32px 40px;
 }
 
 h1 {
-  color: #312E2C;
-  font-family: 'Young Serif';
+  color: var(--stone-900);
+  font-family: 'Young Serif', sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 100%;
   margin: 40px 0 24px;
 }
@@ -34,16 +45,16 @@ img {
 }
 
 .preparation {
-  background-color: #FFF7FB;
+  background-color: var(--rose-50);
   padding: 24px;
   border-radius: 12px;
   margin: 32px 0;
 }
 
-.preparation p {
-  color: #7A284E;
-  font-size: 20px;
-  font-family: 'Outfit';
+.preparation h2 {
+  color: var(--rose-800);
+  font-size: 1.25rem;
+  font-family: 'Outfit', sans-serif;
   font-weight: 600;
   margin-bottom: 16px;
   line-height: 100%;
@@ -54,7 +65,7 @@ img {
 }
 
 .preparation li::marker {
-  color: #7A284E;
+  color: var(--rose-800);
 }
 
 .preparation li, .ingredients li, .instructions li {
@@ -66,13 +77,12 @@ img {
 }
 
 h3 {
-  color: #854632;
-  font-family: 'Young Serif';
+  color: var(--brown-800);
+  font-family: 'Young Serif', sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 100%;
   margin-bottom: 24px;
-  line-height: 100%;
 }
 
 .ingredients, hr, .instructions {
@@ -84,7 +94,7 @@ h3 {
 }
 
 .ingredients li::marker, .instructions li::marker {
-  color: #854632;
+  color: var(--brown-800);
 }
 
 .instructions li::marker {
@@ -92,17 +102,17 @@ h3 {
 }
 
 .instructions li {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 table {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   width: 100%;
   border-collapse: collapse;
 }
 
 table tr {
-  border-bottom: 1px solid #E3DDD7;
+  border-bottom: 1px solid var(--stone-150);
 }
 
 table tr:last-child {
@@ -114,16 +124,16 @@ table tr td:first-child {
 }
 
 table tr td:last-child {
-  color: #854632;
+  color: var(--brown-800);
 }
 
 td {
   padding: 12px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
-    margin: 128px 0;
+    margin: 8rem 0;
   }
   .wrapper {
     max-width: 616px;
@@ -139,12 +149,12 @@ td {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .wrapper {
-    max-width: 736px;
+    max-width: 46rem;
   }
 }
